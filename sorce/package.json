@@ -1,0 +1,20 @@
+{
+  "name": "bat-host",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "build": {
+    "appId": "com.bat.host.id"
+  },
+  "scripts": {
+    "test": "electron teste.js",
+    "start": "electron main.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "electron": "^3.0.13",
+    "fs-extra": "^7.0.1",
+    "jsonfile-promised": "0.0.1"
+  }
+}

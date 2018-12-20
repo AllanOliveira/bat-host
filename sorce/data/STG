@@ -1,0 +1,30 @@
+######################################################
+#--------- CRM PLUSOFT ------ KERNEL 4 --------------#
+######################################################
+ 
+#d3-hcrm-stg1 - Kernel 4
+10.138.16.195    crmauth.saca.intranet.uol.com.br
+10.138.19.224    crmweb.intranet.uol.com.br 
+10.138.19.224    crmger.intranet.uol.com.br 
+10.138.19.224    crmwork.intranet.uol.com.br
+10.138.19.224    crmadm.intranet.uol.com.br 
+10.138.19.224    crmsfa.intranet.uol.com.br
+  
+#VIPS SACA STG
+10.138.19.196    saca.intranet.uol.com.br
+10.138.19.197    cadastro.saca.intranet.uol.com.br
+10.138.19.192    saca-session.intranet
+  
+#d3-galileu-stg1
+10.138.16.197    faleconosco.uol.com.br
+  
+#d3-hujaza-stg1
+10.138.16.198 download.eps.provas.intranet.uol.com.br
+10.138.16.198 download.provas.intranet.uol.com.br
+10.138.16.198 img.eps.provas.intranet.uol.com.br
+10.138.16.198 img.provas.intranet.uol.com.br
+10.138.16.198 papalog.intranet.uol.com.br
+10.138.16.198 provas.adm.eps.intranet.uol.com.br
+10.138.16.198 provas.adm.intranet.uol.com.br
+10.138.16.198 provas.eps.intranet.uol.com.br
+10.138.16.198 provas.intranet.uol.com.br
