@@ -9,13 +9,17 @@ module.exports = {
                 label : "Bat Produção" , 
                 type:"radio",
                 accelerator : "Ctrl+1",
-                click:() => arquives.atualizaHostsLocal('PROD')
+                click : (event,um, dois) => {
+                    arquives.atualizaHostsLocal('PROD');
+                }
             },
             {
                 label : "Bat QA1", 
                 type:"radio",
                 accelerator : "Ctrl+2",
-                click: () => arquives.atualizaHostsLocal('QA')
+                click: () => {
+                    arquives.atualizaHostsLocal('QA');
+                }
             },
             {
                 label : "Bat QA2", 

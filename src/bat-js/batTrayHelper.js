@@ -1,6 +1,9 @@
 const {Tray,Menu,globalShortcut} = require('electron');
 const templateTrayMenu = require('./templateTrayMenu');
 
+let template = null;
+let trayMenu = null;
+
 module.exports = function (app){
     return {
 
@@ -12,18 +15,22 @@ module.exports = function (app){
         },
     
         buildMenu(tray){
-            let template = templateTrayMenu.getTemplateTray(app);
-            let trayMenu = Menu.buildFromTemplate(template);
-
-            this.registerglobalShortcutMenu(template);
+            template = templateTrayMenu.getTemplateTray(app);
+            trayMenu = Menu.buildFromTemplate(template);
+            this.registerglobalShortcutMenu();
             tray.setContextMenu(trayMenu);
         },
 
-        registerglobalShortcutMenu(template){
-            template.forEach((item) => {
-                if(item.accelerator)
-                    globalShortcut.register(item.accelerator, item.click);
-            });
+        registerglobalShortcutMenu(){
+
+            let commandsMap = trayMenu.commandsMap;
+
+            for(comandId in trayMenu.commandsMap){
+                let commandMap = commandsMap[comandId]
+                if(commandMap.accelerator)
+                    globalShortcut.register(commandMap.accelerator, commandMap.click);
+            }
+            
         }
     }
 }
