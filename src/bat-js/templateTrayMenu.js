@@ -9,8 +9,8 @@ module.exports = {
                 label : "Bat Produção" , 
                 type:"radio",
                 accelerator : "Ctrl+1",
-                click : (event,um, dois) => {
-                    arquives.atualizaHostsLocal('PROD');
+                click : () => {
+                    arquives.atualizaHostsLocal('PROD','Bat Produção');
                 }
             },
             {
@@ -18,20 +18,20 @@ module.exports = {
                 type:"radio",
                 accelerator : "Ctrl+2",
                 click: () => {
-                    arquives.atualizaHostsLocal('QA');
+                    arquives.atualizaHostsLocal('QA','Bat QA1');
                 }
             },
             {
                 label : "Bat QA2", 
                 type:"radio",
                 accelerator : "Ctrl+3",
-                click:() => arquives.atualizaHostsLocal('QA')
+                click:() => arquives.atualizaHostsLocal('QA','Bat QA2')
             },
             {
                 label : "Bat Stage", 
                 type:"radio",
                 accelerator : "Ctrl+4",
-                click:() => arquives.atualizaHostsLocal('STG')
+                click:() => arquives.atualizaHostsLocal('STG','Bat Stage')
             },
             {type : "separator"},
             {
