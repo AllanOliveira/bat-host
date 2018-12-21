@@ -1,3 +1,4 @@
+const {Notification} = require('electron');
 const jsonfile = require('jsonfile-promised');
 const fs = require('fs-extra');
 
@@ -7,12 +8,15 @@ module.exports = {
         let dirOrigem = `${__dirname}/../data/${ambiente}`;
         let dirDestino = '\\Windows\\System32\\drivers\\etc\\hosts';
 
-        console.log(dirOrigem);
-        console.log(dirDestino);
-
         fs.copy(dirOrigem, dirDestino)  
-          .then(() => console.log('success!'))  
-          .catch(err => console.error(err));
+          .then(() => {
+            console.log('success!');
+            new Notification('Sucesso!');
+          })  
+          .catch(err => {
+            console.error(err);
+            new Notification('Erro!');
+          });
     }
     ,
     getHostsByAmbiente(nomeArquivo){
