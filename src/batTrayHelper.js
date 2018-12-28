@@ -7,7 +7,7 @@ let trayMenu = null;
 module.exports = function (app){
     return {
 
-        init(){    
+        build(){    
             let tray = new Tray(__dirname+'/../app/img/icon-bat-50.png');
             tray.setToolTip('Bat Hosts');
             this.buildMenu(tray);
