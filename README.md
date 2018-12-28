@@ -35,7 +35,7 @@ npm start //raiz do projeto
 ## Executando Testes
 (Ainda não implementado)
 
-## Built With
+## Distribuição
 
 * [Electron-builder](https://github.com/electron-userland/electron-builder) - Builda a distribuição para ser instalada em terceiros
 ```
