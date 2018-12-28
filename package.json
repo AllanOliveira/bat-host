@@ -5,11 +5,11 @@
   "main": "main.js",
   "build": {
     "appId": "br.com.bathost",
-    "productName" : "BatHost"
+    "productName": "BatHost"
   },
   "scripts": {
     "start": "electron .",
-    "pack" : "build --dir"
+    "pack": "build --dir"
   },
   "author": "",
   "license": "ISC",
@@ -17,7 +17,7 @@
     "fs-extra": "^7.0.1",
     "jsonfile-promised": "0.0.1"
   },
-  "devDependencies":{
+  "devDependencies": {
     "electron": "^3.0.13"
   }
 }
