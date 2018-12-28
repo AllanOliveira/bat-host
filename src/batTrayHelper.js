@@ -9,7 +9,7 @@ module.exports = function (app){
 
         build(){    
             let tray = new Tray(__dirname+'/../app/img/icon-bat-50.png');
-            tray.setToolTip('Bat Hosts');
+            tray.setToolTip('BatHosts');
             this.buildMenu(tray);
             return this.tray;
         },
