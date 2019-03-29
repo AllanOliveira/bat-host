@@ -10,7 +10,7 @@
   "scripts": {
     "start": "electron .",
     "pack": "build --dir",
-    "test" : "mocha"
+    "test": "mocha"
   },
   "author": "",
   "license": "ISC",
